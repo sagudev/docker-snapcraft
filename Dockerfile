@@ -13,6 +13,7 @@ RUN curl -L $(curl -H 'X-Ubuntu-Series: 16' 'https://api.snapcraft.io/api/v1/sna
 
 COPY bin/snapcraft-wrapper /snap/bin/snapcraft
 
+RUN chmod +x /snap/bin/snapcraft
 
 ENV SNAP=/snap/snapcraft/current
 ENV SNAP_NAME=snapcraft
